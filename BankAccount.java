@@ -14,14 +14,14 @@ class  BankAccount{
 	//Deposit operation
 	void deposit(double amt){
 		balance = balance+amt;
-		alert("Credited "+amt+"and the current balance is "+balance);
+		alert("Credited ",amt);
 	}
 
 	//Withdraw Operation
 
 	void withdraw(double amt){
 		balance = balance - amt;
-		alert("Debited "+amt+ "and the current balance is "+balance);
+		alert("Debited ",amt);
 	}
 
 	//CurrentBalance operation
@@ -31,7 +31,7 @@ class  BankAccount{
 	}
 	private void alert(String operation,double amt){
 		System.out.println("Your account "+accNum+"is "+operation+"with "+amt);
-		System.out.println("The total balancen is "+balancce);
+		System.out.println("The total balance is "+balance);
 	}
 	
 	//static methods for printing static fields
@@ -54,6 +54,6 @@ class  BankAccount{
 		System.out.println("   ifsc\t\t: "     +ifsc      );
 		System.out.println("   accNum\t: "     +accNum    );
 		System.out.println("   accHName\t: "   +accHName  );
-		System.out.println("   Balance\t: "    +Balance   );
+		System.out.println("   Balance\t: "    +balance   );
 	}
 }
